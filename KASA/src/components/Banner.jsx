@@ -1,5 +1,6 @@
 import BannerImg from "../assets/BannerImg.svg";
 import "../css/Banner.scss";
+
 export function Banner() {
   return (
     <div className="imgBanner">
