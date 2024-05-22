@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4em;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+
+  a {
+    text-decoration: none; 
+    color: black;
+  }
+}
+

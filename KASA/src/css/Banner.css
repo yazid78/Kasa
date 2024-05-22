@@ -1,0 +1,35 @@
+.imgBanner {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.imgBanner img {
+  width: 100%;
+  height: auto;
+}
+.imgBanner .bannerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* @media (max-width: 768px) {
+    .bannerText {
+        font-size: 1.5rem; 
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bannerText {
+        font-size: 1rem; /
+        padding: 0.25rem;
+    }
+}
+ *//*# sourceMappingURL=Banner.css.map */

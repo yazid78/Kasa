@@ -1,12 +1,14 @@
-import './app.css'
+import './css/app.scss'
+import {Navbar} from './components/Navbar.jsx'
+import {Banner} from './components/Banner.jsx'
 
 export function App() {
   //const [count, setCount] = useState()
 
   return (
     <div>
-      <h1>dfsdf</h1>
- 
+      <Navbar />
+      <Banner />
     </div>
   )
 }

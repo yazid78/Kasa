@@ -1,0 +1,39 @@
+.imgBanner {
+    position: relative;
+    width: 100%;
+    max-width: 100%; // Assure que l'image prend toute la largeur disponible
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bannerText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 48px; // Utilise une unité relative pour le texte
+        font-weight: 700;
+        text-align: center;
+       
+    }
+}
+
+// Médias queries pour les petits écrans
+/* @media (max-width: 768px) {
+    .bannerText {
+        font-size: 1.5rem; 
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bannerText {
+        font-size: 1rem; /
+        padding: 0.25rem;
+    }
+}
+ */
