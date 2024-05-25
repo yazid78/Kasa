@@ -1,4 +1,4 @@
-import "../css/Navbar.scss";
+import "../scss/Navbar.scss";
 import LOGO from "../assets/LOGO.png";
 
 export function Navbar() {
