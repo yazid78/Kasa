@@ -4,13 +4,44 @@
   align-items: center;
   padding: 4em;
 }
+.navbar img {
+  margin-right: 30px;
+}
 
 .navlinks {
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 260px;
 }
 .navlinks a {
   text-decoration: none;
   color: black;
+  width: 100px;
+  max-width: 100%;
+  font-size: 24px;
+  text-align: center;
+}
+.navlinks a:hover {
+  border-bottom: 2px solid #dead51;
+  transition: 0.2s;
+}
+
+@media (max-width: 618px) {
+  .navbar img {
+    width: 145px;
+    height: 46.88px;
+    margin-right: 35px;
+  }
+  .navbar {
+    margin: 10px;
+    padding: 0;
+  }
+  .navbar .navlinks {
+    width: 200px;
+  }
+  .navbar .navlinks a {
+    width: 80px;
+    font-size: 14px;
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

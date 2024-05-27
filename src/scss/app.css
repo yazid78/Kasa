@@ -2,9 +2,15 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
-body {
-  margin-left: 5%;
-  margin-right: 5%;
+.app-container {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.app-container > footer {
+  margin-left: 0;
+  margin-right: 0;
 }/*# sourceMappingURL=app.css.map */

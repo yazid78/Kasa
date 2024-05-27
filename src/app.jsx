@@ -7,10 +7,17 @@ import { AppartementCards } from "./components/AppartementCards.jsx";
 export function App() {
   return (
     <div>
+      <div className="app-container">
       <Navbar />
       <Banner />
       <AppartementCards />
+     
+    </div> 
+    <footer>
       <Footer />
+    </footer>
     </div>
+
+    
   );
 }
