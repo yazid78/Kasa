@@ -6,18 +6,15 @@ import { AppartementCards } from "./components/AppartementCards.jsx";
 
 export function App() {
   return (
-    <div>
+    <main>
       <div className="app-container">
-      <Navbar />
-      <Banner />
-      <AppartementCards />
-     
-    </div> 
-    <footer>
-      <Footer />
-    </footer>
-    </div>
-
-    
+        <Navbar />
+        <Banner />
+        <AppartementCards />
+      </div>
+      <footer>
+        <Footer />
+      </footer>
+    </main>
   );
 }

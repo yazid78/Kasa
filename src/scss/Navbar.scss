@@ -21,10 +21,19 @@
     text-align: center;
   }
   a:hover{
-    border-bottom: 2px solid #dead51;
-    transition: 0.2s;
+    text-decoration: underline;
+    text-decoration-color: orange ;
+    text-decoration-thickness: 2px;
+  }
+ a.active{
+ text-decoration: underline;
+text-decoration-color: orange ;
+text-decoration-thickness: 2px;
   }
 }
+
+
+
 
 @media (max-width: 618px) {
   .navbar img {
