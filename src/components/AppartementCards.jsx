@@ -10,7 +10,7 @@ export function AppartementCards(){
     <div className='containerAppartement'>
       <div className="row">
         {data.map(appartement => (  
-          <Link to={"/appartements"}>
+          <Link to={"/appartements/" + appartement.id}>
           <div className='cardAppartement' key={appartement.id}> 
             <img src={appartement.cover} alt={appartement.id}  />
             <p className='titleAppartement'>{appartement.title}</p>
