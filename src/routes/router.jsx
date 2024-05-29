@@ -1,11 +1,11 @@
 import { render } from "preact";
-import { App } from "./app.jsx";
-import { Navbar } from "./components/Navbar.jsx";
-import "./scss/index.scss";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { App } from "../app.jsx";
+import { Navbar } from "../components/Navbar.jsx";
+import "../scss/index.scss";
+import { createBrowserRouter} from "react-router-dom";
 
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
     {
       path: "/",
       element: <App />,
@@ -31,4 +31,4 @@ const router = createBrowserRouter([
     },
   ]);
 
-  export default router
+ 
