@@ -42,7 +42,7 @@ export function DescriptionAppartement() {
           <span className="rating" style={{ width: calculateRatingWidth(appartement.rating) }}></span>
         </div>
       </div>
-      <CollapseAppartement/>
+      <CollapseAppartement appartement={appartement} />
     </div>
   );
 }

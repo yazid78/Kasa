@@ -1,0 +1,36 @@
+.contentCollapse {
+  margin-top: 50px;
+  display: flex;
+  gap: 50px;
+}
+
+.collapsible {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 582px;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: #ff6060;
+  transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+  background-color: #ff6060;
+}
+
+.content {
+  background-color: rgba(246, 246, 246, 0.4509803922);
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  padding: 0 10px;
+}
+
+.content.active {
+  max-height: 200px;
+  padding: 10px;
+}/*# sourceMappingURL=CollapseAppartement.css.map */
