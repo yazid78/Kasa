@@ -15,7 +15,7 @@ export function CarrouselAppartement({ appartement }) {
   };
 
   return (
-    <div className="containerCarrousel">
+  <>
       <div className="carrousel">
         {appartement.pictures.map((picture, index) => (
           <img
@@ -30,6 +30,6 @@ export function CarrouselAppartement({ appartement }) {
         <button onClick={handlePrevImage}><img src={left} alt="left click" /></button>
         <button onClick={handleNextImage}><img src={right} alt="right click" /></button>
       </div>
-    </div>
+      </>
   );
 }
