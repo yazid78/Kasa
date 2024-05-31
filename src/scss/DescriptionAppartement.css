@@ -1,5 +1,5 @@
 @charset "UTF-8";
-#app {
+.PageAppartements {
   margin-left: 4%;
   margin-right: 4%;
 }
@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
+  color: #ff6060;
 }
 
 .containerHost {
@@ -26,11 +27,14 @@
 .rubriqueTags {
   display: flex;
   gap: 20px;
+  width: 100%;
+  color: white;
+  font-weight: 500;
 }
 
 .rubriqueTags span {
   height: 25px;
-  width: 115px;
+  padding: 1px 10px 0;
   line-height: 25px;
   background-color: #ff6060;
   border-radius: 10px;
@@ -41,8 +45,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  width: 100%;
 }
+
 .rating span {
   font-size: 35px;
 }
@@ -58,7 +63,7 @@
 }
 
 .star {
-  color: #ccc; /* Color for empty stars */
+  color: #ccc;
 }
 
 .rating {
@@ -68,10 +73,40 @@
   height: 100%;
   overflow: hidden;
   white-space: nowrap;
-  color: #ff6060; /* Color for filled stars */
-  pointer-events: none; /* To ensure clicks go to the stars below */
+  color: #ff6060;
+  pointer-events: none;
 }
 
 .rating::before {
   content: "★★★★★";
+}
+
+@media screen and (max-width: 600px) {
+  .rubriqueTags span {
+    font-size: 10px;
+  }
+  .containerTagsRating {
+    flex-wrap: wrap;
+  }
+  .stars {
+    margin-top: 30px;
+    position: relative;
+    font-size: 18px;
+  }
+  .containerHost {
+    transform: translateY(120px);
+  }
+  .containerHost p {
+    width: 100%;
+    font-size: 12px;
+  }
+  .containerInformations h1 {
+    font-size: 18px;
+  }
+  .containerInformations p {
+    font-size: 14px;
+  }
+  .carrousel-controls img {
+    width: 24px;
+  }
 }/*# sourceMappingURL=DescriptionAppartement.css.map */

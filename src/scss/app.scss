@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +8,15 @@
 .app-container {
   margin-left: 4%;
   margin-right: 4%;
+  flex: 1;
 }
 
 .app-container > footer {
   margin-left: 0;
   margin-right: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+ min-height: 100vh;
 }

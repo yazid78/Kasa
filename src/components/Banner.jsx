@@ -1,13 +1,13 @@
 import BannerImg from "../assets/BannerImg.svg";
 import "../scss/Banner.scss";
 
-export function Banner() {
+export function Banner({ imgSrc , bannerTexte ="Chez vous, partout et ailleurs"}) {
   return (
     <div className="imgBanner">
-      <img src={BannerImg} alt="image banner " />
+      <img src={imgSrc || BannerImg} alt="image banner" />
       <div className="bannerText">
-                Chez vous, partout et ailleurs
-            </div>
+       {bannerTexte}
+      </div>
     </div>
   );
 }

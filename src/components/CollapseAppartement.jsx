@@ -23,7 +23,7 @@ export const CollapseAppartement = ({ appartement }) => {
       </div> 
         </div>
       
-        <div>
+        <div className="collapseEq">
            <button type="button" className="collapsible" onClick={handleToggle2}>
            Équipements
       </button>

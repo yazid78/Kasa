@@ -10,7 +10,7 @@ export function DescriptionAppartement() {
   const { id } = useParams();
   const appartement = data.find((appart) => appart.id === id);
 
-  if (!appartement) return <div>Appartement non trouvé</div>;
+  if (!appartement)  return <p>loading ... ⏳</p>;
   const calculateRatingWidth = (rating) => {
     return (rating / 5) * 100 + "%";
   };

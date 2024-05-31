@@ -4,9 +4,6 @@
   align-items: center;
   padding: 4em;
 }
-.navbar img {
-  margin-right: 30px;
-}
 
 .navlinks {
   display: flex;
@@ -16,7 +13,7 @@
 .navlinks a {
   text-decoration: none;
   color: black;
-  width: 100px;
+  width: 120px;
   max-width: 100%;
   font-size: 24px;
   text-align: center;

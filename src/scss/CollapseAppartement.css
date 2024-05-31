@@ -9,7 +9,8 @@
   border-radius: 5px;
   padding: 10px;
   width: 100%;
-  max-width: 582px;
+  max-width: 900px;
+  color: white;
   text-align: left;
   border: none;
   outline: none;
@@ -24,6 +25,8 @@
 
 .content {
   background-color: rgba(246, 246, 246, 0.4509803922);
+  width: 100%;
+  max-width: 900px;
   max-height: 0;
   overflow: hidden;
   transition: 0.5s ease-in-out;
@@ -33,4 +36,9 @@
 .content.active {
   max-height: 200px;
   padding: 10px;
+}
+
+.collapseEq {
+  width: 100%;
+  max-width: 900px;
 }/*# sourceMappingURL=CollapseAppartement.css.map */
