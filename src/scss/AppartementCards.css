@@ -15,6 +15,11 @@
   height: 340px;
 }
 
+.cardAppartement:hover {
+  transform: scale(1.06);
+  transition: transform 0.2s ease-in-out;
+}
+
 .row {
   display: flex;
   justify-content: center;
@@ -48,7 +53,6 @@
   .cardAppartement {
     width: 100%;
     max-width: 700px;
-    margin: 10px;
   }
   .row {
     display: flex;

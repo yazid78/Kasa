@@ -37,6 +37,10 @@
   flex-direction: column;
   min-height: 55vh;
 }
+.error a{
+  color: black;
+  text-decoration: underline;
+}
 
 @media (max-width: 618px) {
     .error h1 {
@@ -47,7 +51,6 @@
       }
       .error p {
         margin: 20px;
-        text-decoration: underline;
         font-size: 14px;
         text-align: center;
       }

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useFetchData } from "./FetchData.jsx";
 import { CarrouselAppartement } from "./CarrouselAppartement.jsx";
-import { CollapseAppartement } from './CollapseAppartement.jsx'
+import  CollapseAppartement  from './CollapseAppartement.jsx'
 import "../scss/DescriptionAppartement.scss";
 import "../scss/Navbar.scss";
 

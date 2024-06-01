@@ -1,7 +1,6 @@
 import { App } from "../app.jsx";
 import { Navbar } from "../components/Navbar.jsx";
 import { Footer } from "../components/Footer.jsx";
-import { Banner } from "../components/Banner.jsx";
 import { DescriptionAppartement } from "../components/DescriptionAppartement.jsx";
 import { Error404 } from "../components/error404.jsx";
 import { Apropos } from "../components/apropos.jsx";
@@ -30,7 +29,7 @@ export const router = createBrowserRouter([
     path: "/apropos",
     element: (
       <div>
-        <Apropos />
+        <Apropos className="PageAppartements" />
       </div>
     ),
   },
