@@ -6,7 +6,7 @@ import "../scss/DescriptionAppartement.scss";
 import "../scss/Navbar.scss";
 
 export function DescriptionAppartement() {
-  const data = useFetchData("/logements.json");
+  const data = useFetchData("/public/logements.json");
   const { id } = useParams();
   const appartement = data.find((appart) => appart.id === id);
 

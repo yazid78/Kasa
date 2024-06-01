@@ -3,14 +3,9 @@ import { useEffect, useState } from "react";
 export function useFetchData(url) {
   const [data, setData] = useState([]);
   
-  useEffect(() => {
+  useEffect(() =>{
     fetch(url)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
+      .then(response => response.json())
       .then(result => setData(result))
       .catch(err => console.error(err));
   }, [url]);
