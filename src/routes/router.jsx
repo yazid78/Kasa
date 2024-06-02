@@ -9,12 +9,12 @@ import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Kasa/",  // route correspond à la base URL
     element: <App />,
     errorElement: <Error404 />,
   },
   {
-    path: "/appartements/:id",
+    path: "/Kasa/appartements/:id",  // route avec le préfixe de la base URL
     element: (
       <>
         <div className="PageAppartements">
@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
     ),
   },
   {
-    path: "/apropos",
+    path: "/Kasa/apropos",  // route avec le préfixe de la base URL
     element: (
       <div>
         <Apropos className="PageAppartements" />

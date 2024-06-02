@@ -9,11 +9,11 @@ export function Navbar() {
         <img src={LOGO} alt="logo" />
       </NavLink>
       <div className="navlinks">
-        <NavLink to={"/"}>
+        <NavLink to={"/Kasa/"}>
           <div className="link">Accueil</div>
         </NavLink>
 
-        <NavLink to="/apropos">
+        <NavLink to="/Kasa/apropos">
           <div className="link">À Propos</div>
         </NavLink>
       </div>
