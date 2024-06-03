@@ -11,7 +11,7 @@ export const Error404 = () => {
       <div className="error">
         <img src={error404} alt="" />
         <h1>Oups! La page que vous demandez n'existe pas.</h1>
-        <Link to={"/"}>
+        <Link to={"/Kasa"}>
     
           <p>Retourner sur la page d’accueil</p>
         </Link>

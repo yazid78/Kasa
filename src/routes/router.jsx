@@ -2,7 +2,7 @@ import { App } from "../app.jsx";
 import { Navbar } from "../components/Navbar.jsx";
 import { Footer } from "../components/Footer.jsx";
 import { DescriptionAppartement } from "../components/DescriptionAppartement.jsx";
-import { Error404 } from "../components/error404.jsx";
+import  Error404  from "../components/error404.jsx";
 import { Apropos } from "../components/apropos.jsx";
 import "../scss/index.scss";
 import { createBrowserRouter } from "react-router-dom";
@@ -33,7 +33,7 @@ export const router = createBrowserRouter([
     ),
   },
   {
-    path: "*",  // route catch-all pour capturer toutes les routes non définies
+    path: "/kasa/*",  // route catch-all pour capturer toutes les routes non définies
     element: <Error404 />,
   },
 ]);
