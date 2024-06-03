@@ -9,6 +9,7 @@ export function DescriptionAppartement() {
   const data = useFetchData("/Kasa/logements.json");  // Utilisation de la bonne URL
   const { id } = useParams();
   const appartement = data.find((appart) => appart.id === id);
+  
 
   if (!appartement) return <p>loading ... ⏳</p>;
 

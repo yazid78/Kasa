@@ -11,7 +11,6 @@ export const router = createBrowserRouter([
   {
     path: "/Kasa/",  // route correspond à la base URL
     element: <App />,
-    errorElement: <Error404 />,
   },
   {
     path: "/Kasa/appartements/:id",  // route avec le préfixe de la base URL
@@ -32,5 +31,9 @@ export const router = createBrowserRouter([
         <Apropos className="PageAppartements" />
       </div>
     ),
+  },
+  {
+    path: "*",  // route catch-all pour capturer toutes les routes non définies
+    element: <Error404 />,
   },
 ]);
