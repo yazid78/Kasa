@@ -33,7 +33,7 @@ export const router = createBrowserRouter([
     ),
   },
   {
-    path: "/kasa/*",  // route catch-all pour capturer toutes les routes non définies
+    path: "/Kasa/*",  // route catch-all pour capturer toutes les routes non définies
     element: <Error404 />,
   },
 ]);
