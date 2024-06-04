@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/Kasa/appartements/:id",  // route avec le préfixe de la base URL
+    path: "/Kasa/appartements/:id/",  // route avec le préfixe de la base URL
     element: (
       <>
         <div className="PageAppartements">
