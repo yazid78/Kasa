@@ -1,17 +1,20 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useFetchData } from "./FetchData.jsx";
 import { CarrouselAppartement } from "./CarrouselAppartement.jsx";
 import CollapseAppartement from './CollapseAppartement.jsx';
+import  Error404  from "../components/error404.jsx";
 import "../scss/DescriptionAppartement.scss";
 import "../scss/Navbar.scss";
 
 export function DescriptionAppartement() {
-  const data = useFetchData("/Kasa/logements.json");  // Utilisation de la bonne URL
+  const navigate = useNavigate();
+  const data = useFetchData("/Kasa/logements.json"); 
   const { id } = useParams();
   const appartement = data.find((appart) => appart.id === id);
-  
-
-  if (!appartement) return <p>loading ... ⏳</p>;
+  if (!appartement) {
+    navigate("/Kasa/*");
+    return null; 
+  }
 
   const calculateRatingWidth = (rating) => {
     return (rating / 5) * 100 + "%";

@@ -9,11 +9,11 @@ import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
   {
-    path: "/Kasa/",  // route correspond à la base URL
+    path: "/Kasa/",  
     element: <App />,
   },
   {
-    path: "/Kasa/appartements/:id/",  // route avec le préfixe de la base URL
+    path: "/Kasa/appartements/:id",  
     element: (
       <>
         <div className="PageAppartements">
@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
     ),
   },
   {
-    path: "/Kasa/apropos",  // route avec le préfixe de la base URL
+    path: "/Kasa/apropos", 
     element: (
       <div>
         <Apropos className="PageAppartements" />
@@ -33,7 +33,7 @@ export const router = createBrowserRouter([
     ),
   },
   {
-    path: "/Kasa/*",  // route catch-all pour capturer toutes les routes non définies
+    path: "/Kasa/*", 
     element: <Error404 />,
   },
 ]);

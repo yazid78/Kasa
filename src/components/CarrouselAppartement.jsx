@@ -1,7 +1,7 @@
 import "../scss/CarrouselAppartement.scss";
-import { useState } from 'react';
-import left from '../assets/VectorLeft.png'
-import right from '../assets/VectorRight.png'
+import { useState } from "react";
+import left from "../assets/VectorLeft.png";
+import right from "../assets/VectorRight.png";
 
 export function CarrouselAppartement({ appartement }) {
   const [currentImage, setCurrentImage] = useState(0);
@@ -15,21 +15,28 @@ export function CarrouselAppartement({ appartement }) {
   };
 
   return (
-  <>
+    <>
       <div className="carrousel">
         {appartement.pictures.map((picture, index) => (
-          <img
-            className={index === currentImage ? "active" : "opacity"}
-            key={index}
-            src={picture}
-            alt={`Picture ${index + 1}`}
-          />
+          <>
+            <img
+              className={index === currentImage ? "active" : "opacity"}
+              key={index}
+              src={picture}
+              alt={`Picture ${index + 1}`}
+            />
+            <span className="countImage">{currentImage + 1 + "/" + appartement.pictures.length}</span>
+          </>
         ))}
       </div>
       <div className="carrousel-controls">
-        <button onClick={handlePrevImage}><img src={left} alt="left click" /></button>
-        <button onClick={handleNextImage}><img src={right} alt="right click" /></button>
+        <button onClick={handlePrevImage}>
+          <img src={left} alt="left click" />
+        </button>
+        <button onClick={handleNextImage}>
+          <img src={right} alt="right click" />
+        </button>
       </div>
-      </>
+    </>
   );
 }

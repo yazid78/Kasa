@@ -9,7 +9,7 @@ export const Error404 = () => {
     <div>
       <Navbar />
       <div className="error">
-        <img src={error404} alt="" />
+        <img src={error404} alt="image erreur404" />
         <h1>Oups! La page que vous demandez n'existe pas.</h1>
         <Link to={"/Kasa"}>
     
