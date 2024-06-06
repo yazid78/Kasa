@@ -25,7 +25,7 @@
   transform: scale(1.06);
   transition: transform 0.2s ease-in-out;
 }
-@media (max-width: 866px) {
+@media (max-width: 1039px) {
   .cardAppartement {
     width: 100%;
     max-width: 700px;
@@ -35,13 +35,17 @@
 .row {
   display: flex;
   justify-content: center;
-  width: 1240px;
+  width: 90%;
   flex-wrap: wrap;
   gap: 100px;
+  border-radius: 25px;
+  background-color: #f6f6f6;
+  padding: 40px;
 }
-@media (max-width: 866px) {
+@media (max-width: 1039px) {
   .row {
     width: 100%;
+    background-color: white;
   }
 }
 

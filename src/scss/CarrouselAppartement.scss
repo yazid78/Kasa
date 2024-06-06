@@ -25,6 +25,9 @@
   display: flex;
   justify-content: space-between;
   height: 20px;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 
   button {
     position: relative;
@@ -48,4 +51,7 @@
   line-height: 142.6%;
   position: absolute;
   top: 86%;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 }

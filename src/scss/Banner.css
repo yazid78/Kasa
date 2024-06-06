@@ -1,8 +1,10 @@
 .imgBanner {
   position: relative;
-  width: 100%;
+  width: 90%;
   max-width: 100%;
   overflow: hidden;
+  display: flex;
+  margin: auto;
 }
 .imgBanner img {
   width: 100%;
