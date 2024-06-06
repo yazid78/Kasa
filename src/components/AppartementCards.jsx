@@ -3,7 +3,7 @@ import "../scss/AppartementCards.scss";
 import { Link } from "react-router-dom";
 
 export function AppartementCards() {
-  const data = useFetchData("/Kasa/logements.json");  // Utilisation de la bonne URL
+  const data = useFetchData("/Kasa/logements.json");  
   const loader = data.length === 0;
   return (
     <div className="containerAppartement">

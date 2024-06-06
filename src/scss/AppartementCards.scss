@@ -4,7 +4,15 @@
   gap: 30px;
   justify-content: center;
   width: 100%;
+
+  img {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    object-fit: cover;
+  }
 }
+
 .cardAppartement {
   display: flex;
   justify-content: space-between;
@@ -12,24 +20,28 @@
   width: 100%;
   max-width: 340px;
   height: 340px;
+
+  &:hover {
+    transform: scale(1.06);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  @media (max-width: 866px) {
+    width: 100%;
+    max-width: 700px;
+  }
 }
-.cardAppartement:hover{
-  transform: scale(1.06);
-  transition: transform 0.2s ease-in-out;
-  
-}
+
 .row {
   display: flex;
   justify-content: center;
   width: 1240px;
   flex-wrap: wrap;
   gap: 100px;
-}
-.containerAppartement img {
-  width: 100%;
-  flex-shrink: 0;
-  border-radius: 10px;
-  object-fit: cover;
+
+  @media (max-width: 866px) {
+    width: 100%;
+  }
 }
 
 .titleAppartement {
@@ -43,18 +55,4 @@
   overflow-wrap: break-word;
   width: 300px;
   z-index: 1;
-}
-@media (max-width: 866px) {
-  .cardAppartement {
-    width: 100%; 
-    max-width: 700px;
-  }
-
-  .row {
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-    
-
-  }
 }

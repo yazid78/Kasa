@@ -1,62 +1,63 @@
 .error {
-    display: flex;
-    flex-direction: column;
-    min-height: 55vh;
-    margin-left: 4%;
-    margin-right: 4%;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 55vh;
+  margin-left: 4%;
+  margin-right: 4%;
+  justify-content: center;
+
+  img {
+    display: block;
+    margin: auto;
+    max-width: 597px;
+    width: 100%;
+    height: auto;
+    gap: 0px;
+    opacity: 0px;
   }
-.error img {
-  display: block;
-  margin: auto;
-  max-width: 597px;
-  width: 100%;
-  height: auto;
-  gap: 0px;
-  opacity: 0px;
+
+  h1 {
+    margin: 20px;
+    color: #ff6060;
+    font-size: 36px;
+    margin: auto;
+    text-align: center;
+  }
+
+  p {
+    margin: 20px;
+    text-decoration: underline;
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 618px) {
+    h1 {
+      margin: 20px;
+      color: #ff6060;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    p {
+      margin: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    height: 625px;
+  }
 }
 
-.error h1 {
-  margin: 20px;
-  color: #ff6060;
-  font-size: 36px;
-  margin: auto;
-  text-align: center;
-}
-.error p {
-  margin: 20px;
-  text-decoration: underline;
-  font-size: 18px;
-  margin: auto;
-  text-align: center;
-  text-decoration: none;
-}
-
-#app .error {
+#error {
   display: flex;
   flex-direction: column;
   min-height: 55vh;
 }
-.error a{
-  color: black;
-  text-decoration: underline;
-}
-
-@media (max-width: 618px) {
-    .error h1 {
-        margin: 20px;
-        color: #ff6060;
-        font-size: 18px;
-        text-align: center;
-      }
-      .error p {
-        margin: 20px;
-        font-size: 14px;
-        text-align: center;
-      }
-
-      .error {
- 
-       height:625px;
- 
-}}

@@ -24,7 +24,6 @@
   background-color: #ff6060;
   transition: background-color 0.3s ease;
 }
-
 .toggle-button:hover {
   background-color: #ff6060;
 }
@@ -37,24 +36,29 @@
   transition: 0.5s ease-in-out;
   padding: 0 10px;
 }
-
 .collapse-content.active {
   max-height: 200px;
   padding: 10px;
-}
-
-.equipment-container {
-  width: 100%;
-  max-width: 900px;
 }
 
 .arrow {
   width: 20px;
   height: 20px;
   margin-left: auto;
+  transition: transform 0.3s ease;
 }
-
 .arrow.rotated {
   transform: rotate(180deg);
-  transition: 0.3s ease-in-out;
+}
+
+.contentCollapse {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+@media screen and (max-width: 500px) {
+  .contentCollapse {
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=apropos.css.map */

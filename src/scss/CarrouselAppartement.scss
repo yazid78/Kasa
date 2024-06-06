@@ -12,7 +12,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 
@@ -30,18 +29,18 @@
   button {
     position: relative;
     bottom: 250px;
-
     background-color: transparent;
     border: none;
     cursor: pointer;
-  }
-  button img {
-    margin: 25px;
+
+    img {
+      margin: 25px;
+    }
   }
 }
-.countImage{
-  color: #fff;
 
+.countImage {
+  color: #fff;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;

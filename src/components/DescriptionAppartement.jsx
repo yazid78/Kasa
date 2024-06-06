@@ -1,19 +1,19 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useFetchData } from "./FetchData.jsx";
 import { CarrouselAppartement } from "./CarrouselAppartement.jsx";
-import CollapseAppartement from './CollapseAppartement.jsx';
-import  Error404  from "../components/error404.jsx";
+import { Collapse } from "./Collapse.jsx";
+import { Navbar } from ".//Navbar.jsx";
 import "../scss/DescriptionAppartement.scss";
 import "../scss/Navbar.scss";
 
 export function DescriptionAppartement() {
   const navigate = useNavigate();
-  const data = useFetchData("/Kasa/logements.json"); 
+  const data = useFetchData("/Kasa/logements.json");
   const { id } = useParams();
   const appartement = data.find((appart) => appart.id === id);
   if (!appartement) {
-    navigate("/Kasa/*");
-    return null; 
+    navigate("/Kasa/error");
+    return null;
   }
 
   const calculateRatingWidth = (rating) => {
@@ -22,6 +22,7 @@ export function DescriptionAppartement() {
 
   return (
     <div>
+      <Navbar />
       <CarrouselAppartement appartement={appartement} />
       <div className="containerInformations">
         <div>
@@ -48,7 +49,17 @@ export function DescriptionAppartement() {
           <span className="rating" style={{ width: calculateRatingWidth(appartement.rating) }}></span>
         </div>
       </div>
-      <CollapseAppartement appartement={appartement} />
+      <div className="ContainerMain">
+      {" "}
+        <Collapse title="Description" content={<p>{appartement.description}</p>} customClass="collapse-custom" />
+        <Collapse
+          title="Équipements"
+          content={appartement.equipments.map((equipment, index) => (
+            <p key={index}>{equipment}</p>
+          ))}
+          customClass="collapse-custom"
+        />
+      </div>
     </div>
   );
 }

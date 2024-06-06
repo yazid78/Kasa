@@ -6,7 +6,6 @@
   margin-right: 4%;
   justify-content: center;
 }
-
 .error img {
   display: block;
   margin: auto;
@@ -16,7 +15,6 @@
   gap: 0px;
   opacity: 0px;
 }
-
 .error h1 {
   margin: 20px;
   color: #ff6060;
@@ -24,7 +22,6 @@
   margin: auto;
   text-align: center;
 }
-
 .error p {
   margin: 20px;
   text-decoration: underline;
@@ -33,19 +30,14 @@
   text-align: center;
   text-decoration: none;
 }
-
-#app .error {
-  display: flex;
-  flex-direction: column;
-  min-height: 55vh;
-}
-
 .error a {
   color: black;
   text-decoration: underline;
 }
-
 @media (max-width: 618px) {
+  .error {
+    height: 625px;
+  }
   .error h1 {
     margin: 20px;
     color: #ff6060;
@@ -57,7 +49,10 @@
     font-size: 14px;
     text-align: center;
   }
-  .error {
-    height: 625px;
-  }
+}
+
+#error {
+  display: flex;
+  flex-direction: column;
+  min-height: 55vh;
 }/*# sourceMappingURL=error404.css.map */

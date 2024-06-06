@@ -31,7 +31,6 @@
   color: white;
   font-weight: 500;
 }
-
 .rubriqueTags span {
   height: 25px;
   padding: 1px 10px 0;
@@ -50,6 +49,9 @@
 
 .rating span {
   font-size: 35px;
+}
+.rating::before {
+  content: "★★★★★";
 }
 
 .starone {
@@ -75,10 +77,6 @@
   white-space: nowrap;
   color: #ff6060;
   pointer-events: none;
-}
-
-.rating::before {
-  content: "★★★★★";
 }
 
 @media screen and (max-width: 600px) {
