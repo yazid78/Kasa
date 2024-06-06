@@ -50,14 +50,12 @@ export function DescriptionAppartement() {
         </div>
       </div>
       <div className="ContainerMain">
-      {" "}
-        <Collapse title="Description" content={<p>{appartement.description}</p>} customClass="collapse-custom" />
+        <Collapse title="Description" content={<p>{appartement.description}</p>} />
         <Collapse
           title="Équipements"
           content={appartement.equipments.map((equipment, index) => (
             <p key={index}>{equipment}</p>
           ))}
-          customClass="collapse-custom"
         />
       </div>
     </div>

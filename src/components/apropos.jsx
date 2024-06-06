@@ -1,7 +1,8 @@
-import "../scss/apropos.scss";import { Navbar } from "../components/Navbar";
-import { Banner } from "../components/Banner";
+import "../scss/apropos.scss";
+import { Navbar } from ".//Navbar";
+import { Banner } from ".//Banner";
 import BannerApropos from "../assets/BannerApropos.png";
-import { Footer } from "../components/Footer.jsx";
+import { Footer } from ".//Footer.jsx";
 import { Collapse } from "./Collapse"; 
 
 

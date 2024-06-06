@@ -8,6 +8,7 @@
   .navbar {
     margin: 10px;
     padding: 0;
+    text-transform: uppercase;
   }
   .navbar img {
     width: 145px;
