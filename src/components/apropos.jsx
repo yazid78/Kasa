@@ -1,7 +1,7 @@
 import "../scss/apropos.scss";
+import BannerImg from "../assets/BannerApropos.png";
 import { Navbar } from ".//Navbar";
 import { Banner } from ".//Banner";
-import BannerApropos from "../assets/BannerApropos.png";
 import { Footer } from ".//Footer.jsx";
 import { Collapse } from "./Collapse"; 
 
@@ -11,7 +11,7 @@ export const Apropos = () => {
     <>
       <div className="PageApropos">
         <Navbar />
-        <Banner imgSrc={BannerApropos} bannerTexte="" />
+        <Banner imgSrc={BannerImg} bannerTexte="" />
         <div className="container">
           <Collapse title="Fiabilité" content={<p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>} />
           <Collapse title="Respect" content={<p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>} />

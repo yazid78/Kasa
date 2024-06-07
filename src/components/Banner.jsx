@@ -1,4 +1,4 @@
-import BannerImg from "../assets/BannerImg.svg";
+import BannerImg from "../assets/BannerApropos.png";
 import "../scss/Banner.scss";
 
 export function Banner({ imgSrc , bannerTexte ="Chez vous, partout et ailleurs"}) {
