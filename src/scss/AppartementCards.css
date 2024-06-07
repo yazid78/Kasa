@@ -50,6 +50,8 @@
 @media (max-width: 1039px) {
   .row {
     width: 100%;
+    padding: 10px;
+    background-color: white;
   }
 }
 

@@ -31,7 +31,7 @@
 .carrousel-controls {
   display: flex;
   justify-content: space-between;
-  height: 20px;
+  height: 1px;
 }
 @media screen and (max-width: 600px) {
   .carrousel-controls {
