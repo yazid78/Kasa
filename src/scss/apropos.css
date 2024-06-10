@@ -3,8 +3,8 @@
   margin-right: 4%;
 }
 
-.container {
-  margin-top: 50px;
+.containerCollapseApropos {
+  margin-top: 28px;
   display: flex;
   flex-direction: column;
   gap: 20px;

@@ -8,7 +8,18 @@
 }
 .imgBanner img {
   width: 100%;
-  height: auto;
+  height: 223px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+@media (max-width: 600px) {
+  .imgBanner img {
+    height: 111px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
 }
 .imgBanner .bannerText {
   position: absolute;

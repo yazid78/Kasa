@@ -8,9 +8,15 @@
 
   img {
     width: 100%;
-    height: auto;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 25px;
+    @media (max-width: 600px) {
+      height: 111px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
   }
-
   .bannerText {
     position: absolute;
     top: 50%;

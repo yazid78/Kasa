@@ -1,15 +1,16 @@
 .carrousel {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 415px;
   overflow: hidden;
+  margin: auto;
 }
-@media (max-width: 580px) {
+@media (max-width: 600px) {
   .carrousel {
-    width: 100%;
+    width: 90%;
     height: 255px;
     overflow: hidden;
-    margin: auto;
+    margin-top: 20px;
   }
 }
 .carrousel img {
@@ -32,11 +33,8 @@
   display: flex;
   justify-content: space-between;
   height: 1px;
-}
-@media screen and (max-width: 600px) {
-  .carrousel-controls {
-    display: none;
-  }
+  width: 90%;
+  margin: auto;
 }
 .carrousel-controls button {
   position: relative;
@@ -45,8 +43,18 @@
   border: none;
   cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+  .carrousel-controls button {
+    bottom: 180px;
+  }
+}
 .carrousel-controls button img {
   margin: 25px;
+}
+@media screen and (max-width: 600px) {
+  .carrousel-controls button img {
+    width: 24px;
+  }
 }
 
 .countImage {
@@ -59,8 +67,9 @@
   position: absolute;
   top: 86%;
 }
-@media screen and (max-width: 600px) {
-  .countImage {
+
+@media (max-width: 767px) {
+  .hideOnMobile {
     display: none;
   }
 }/*# sourceMappingURL=CarrouselAppartement.css.map */

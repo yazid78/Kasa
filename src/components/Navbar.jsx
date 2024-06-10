@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="navbar test">
       <NavLink to={"/Kasa/"}>
         <img src={LOGO} alt="logo" />
       </NavLink>

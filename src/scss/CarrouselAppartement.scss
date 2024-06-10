@@ -1,14 +1,16 @@
 .carrousel {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 415px;
   overflow: hidden;
+  margin: auto;
 
-  @media (max-width: 580px) {
-    width: 100%;
+
+  @media (max-width: 600px) {
+    width: 90%;
     height: 255px;
     overflow: hidden;
-    margin: auto;
+    margin-top:  20px;
 
   }
 
@@ -33,9 +35,9 @@
   display: flex;
   justify-content: space-between;
   height: 1px;
-  @media screen and (max-width: 600px) {
-    display: none;
-  }
+  width: 90%;
+  margin: auto;
+
 
   button {
     position: relative;
@@ -43,9 +45,15 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    @media screen and (max-width: 600px) {
+bottom: 180px;
+    }
 
     img {
       margin: 25px;
+      @media screen and (max-width: 600px) {
+width: 24px;
+      }
     }
   }
 }
@@ -59,7 +67,15 @@
   line-height: 142.6%;
   position: absolute;
   top: 86%;
-  @media screen and (max-width: 600px) {
+
+}
+
+
+
+
+@media (max-width: 767px) {
+  .hideOnMobile {
     display: none;
+
   }
 }

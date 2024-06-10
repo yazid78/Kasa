@@ -25,25 +25,22 @@ export function CarrouselAppartement({ appartement }) {
               src={picture}
               alt={`Picture ${index + 1}`}
             />
-           <span className="countImage">
+            <span className={`countImage ${appartement.pictures.length > 1 ? "hideOnMobile" : ""}`}>
               {appartement.pictures.length > 1 ? `${currentImage + 1}/${appartement.pictures.length}` : ""}
             </span>
           </>
         ))}
       </div>
-      {appartement.pictures.length > 1 &&(
-
-     <div className="carrousel-controls">
-        <button onClick={handlePrevImage}>
-          <img src={left} alt="left click" />
-        </button>
-        <button onClick={handleNextImage}>
-          <img src={right} alt="right click" />
-        </button>
-      </div>
-
+      {appartement.pictures.length > 1 && (
+        <div className="carrousel-controls">
+          <button onClick={handlePrevImage}>
+            <img src={left} alt="left click" />
+          </button>
+          <button onClick={handleNextImage}>
+            <img src={right} alt="right click" />
+          </button>
+        </div>
       )}
- 
     </>
   );
 }

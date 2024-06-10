@@ -27,7 +27,7 @@ export function DescriptionAppartement() {
       <div className="containerInformations">
         <div>
           <h1>{appartement.title}</h1>
-          <p>{appartement.location}</p>
+          <p className="location">{appartement.location}</p>
         </div>
         <div className="containerHost">
           <p>{appartement.host.name}</p>
