@@ -8,19 +8,19 @@ import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Kasa/",
     element: <App />,
   },
   {
-    path: "/appartements/:id",
+    path: "/Kasa/appartements/:id",
     element: <PageAppartements />,
   },
   {
-    path: "/apropos",
+    path: "/Kasa/apropos",
     element: <Apropos />,
   },
   {
-    path: "/*",
+    path: "/Kasa/*",
     element: <Error404 />,
   },
 ]);
