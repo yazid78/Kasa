@@ -1,4 +1,4 @@
-import { App } from "../app.jsx";
+import { App } from "../components/app.jsx";
 
 import PageAppartements from "../components/PageAppartements.jsx";
 import Error404 from "../components/error404.jsx";
@@ -8,19 +8,19 @@ import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
   {
-    path: "/Kasa/",
+    path: "/",
     element: <App />,
   },
   {
-    path: "/Kasa/appartements/:id",
+    path: "/appartements/:id",
     element: <PageAppartements />,
   },
   {
-    path: "/Kasa/apropos",
+    path: "/apropos",
     element: <Apropos />,
   },
   {
-    path: "/Kasa/*",
+    path: "/*",
     element: <Error404 />,
   },
 ]);

@@ -1,9 +1,9 @@
-import "./scss/app.scss";
-import { Navbar } from "./components/Navbar.jsx";
-import { Banner } from "./components/Banner.jsx";
-import { Footer } from "./components/Footer.jsx";
-import { AppartementCards } from "./components/AppartementCards.jsx";
-import BannerHome from "./assets/BannerHome.png";
+import "../scss/app.scss";
+import { Navbar } from "./Navbar.jsx";
+import { Banner } from "./Banner.jsx";
+import { Footer } from "./Footer.jsx";
+import { AppartementCards } from "./AppartementCards.jsx";
+import BannerHome from "../assets/BannerHome.png";
 
 export function App() {
   return (

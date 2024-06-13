@@ -8,11 +8,11 @@ import "../scss/Navbar.scss";
 
 export function DescriptionAppartement() {
   const navigate = useNavigate();
-  const data = useFetchData("/Kasa/logements.json");
+  const data = useFetchData("/logements.json");
   const { id } = useParams();
   const appartement = data.find((appart) => appart.id === id);
   if (!appartement) {
-    navigate("/Kasa/error");
+    navigate("/error");
     return null;
   }
 
